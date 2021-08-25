@@ -1,0 +1,17 @@
+-- My journey to coding proficiency: what I learned building my algo sorting visualization tool --
+
+Background:
+
+    * I built a sorting algorithm visualizer with JavaScript, HTML and CSS. Express was used on the backend to get the server up and running.
+    * I chose to build this project because I was interested in learning about sorting algorithms, so what better way to hammer those concepts home than to try and make a sorting visualization tool of my own? Plus, it can be a little difficult wrapping your head around how each sorting algo works, and these visualizations can make that easier. Not to mention, they look really cool.
+    * In building it, I learned all about each sorting algorithm, and further cemented my JS, CSS and HTML abilities by implementing each algorithm and styling the webpage.
+
+
+Debugging:
+
+I ran into a bug while I was working through implementing my first sorting algorithm, bubble sort. The function would sort a chunk of elements and leave them be, before sorting through another small chunk, and so on. My finished chart looked like it had a bunch of peaks, not the smooth hill I was hoping for.
+What I’d done initially was compare the two elements in an if statement by accessing their widths stored in my CSS file, and swap the shorter width for the longer width where necessary.
+
+To solve my issue, I had to go back to the function where I create the divs (each bar), then set a numeric value attribute to each. After that, in my comparison if statement that’s inside my sorting function, I had to compare the two divs by their numeric value attribute I’d assigned instead of comparing their CSS width. Following the comparison and value swap, I then switched the two elements widths by assigning the other elements value using string literals.
+
+Refer to the before and after photos I’ve committed to this repo to get a better grasp of the changes I had to make to get the function running properly. 
